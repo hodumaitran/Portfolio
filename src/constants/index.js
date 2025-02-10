@@ -49,7 +49,7 @@ export const timelineData = [
     {
         index: 4,
         title: "Tốt nghiệp ngành Lập trình Web - Cao đẳng FPT Polytechnic Cần Thơ",
-        content: "Chính thức tốt nghiệp ngành Lập trình Web tại FPT Polytechnic Cần Thơ với GPA 9.1. Kết thúc hành trình học tập và chuẩn bị cho công việc mới.",
+        content: "Chính thức tốt nghiệp ngành Lập trình Web tại FPT Polytechnic Cần Thơ với GPA 8.9. Kết thúc hành trình học tập và chuẩn bị cho công việc mới.",
         icon: faGraduationCap,
         time: "12/2024"
     },
