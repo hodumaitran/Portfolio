@@ -46,7 +46,7 @@ export const Navbar = () => {
                             TranHDM
                         </h1>
                         <ul className='text-center'>
-                            <ul className='hidden h-full md:flex md:items-center md:justify-between '>
+                            <ul className='h-full'>
                                 <li className="p-5 cursor-pointer">
                                     <Link to="about" smooth={true} duration={500}>Giới thiệu</Link>
                                 </li>
