@@ -99,7 +99,7 @@ export const ProjectData = [
         image: '5.png',
         title: 'Personal Portfolio Website',
         role: ['Frontend Developer'],
-        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
+        link: 'https://github.com/hodumaitran/Portfolio',
         descript: 'Website giới thiệu bản thân, thông tin cá nhân, dự án, kỹ năng và thông tin liên hệ',
         technology: ['ReactJs', 'Tailwind', 'Framer Motion']
     }
