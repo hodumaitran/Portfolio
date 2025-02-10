@@ -8,7 +8,7 @@ import cvFile from '/src/assets/file/CV_PC06159_HoDuMaiTran.pdf';
 export const Information = () => {
   return (
     <div
-      className="grid md:grid-cols-2 gap-10 px-4 md:py-28 py-10 "
+      className="grid md:grid-cols-2 gap-10 px-4 md:py-20 py-10 "
     >
       {/* Thông tin */}
       <div>

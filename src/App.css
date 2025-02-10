@@ -43,6 +43,7 @@ body.dark {
 html {
   scrollbar-width: none;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Ẩn thanh cuộn trên Edge và IE */

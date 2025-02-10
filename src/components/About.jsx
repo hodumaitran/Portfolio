@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const About = () => {
     return (
-        <div className='md:py-28 py-10 w-full flex justify-center'>
+        <div className='md:py-14 py-10 w-full flex justify-center'>
             <div className="max-w-5xl w-full px-4">
                 <motion.h3
                     className='text-center text-3xl md:text-4xl font-medium md:mb-20 mb-10'

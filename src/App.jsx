@@ -16,15 +16,15 @@ function App() {
         <div className="container mx-auto">
           <Information />
           <div className='border-b border-purple-300'></div>
-          <About />
+          <div id="about"><About /></div>
           <div className='border-b border-purple-300'></div>
-          <Skill />
+          <div id="skill"><Skill /></div>
           <div className='border-b border-purple-300'></div>
-          <Timeline />
+          <div id="project"><Project /></div>
           <div className='border-b border-purple-300'></div>
-          <Project />
+          <div id="timeline"><Timeline /></div>
           <div className='border-b border-purple-300'></div>
-          <Contact/>
+          <div id="contact"><Contact /></div>
           <div className='border-b border-purple-300'></div>
           <Footer />
         </div>

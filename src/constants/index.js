@@ -66,34 +66,41 @@ export const timelineData = [
 export const ProjectData = [
     {
         image: '1.png',
-        title: 'Hệ thống hỗ trợ khám sàng lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
+        title: 'Hệ thống hỗ trợ khám sàn lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
         role: ['Fullstack Developer'],
         link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
-        descript: 'Pharmartist là hệ thống được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện...',
-        technology: ['React.js', 'Node.js']
+        descript: 'Pharmartist là hệ thống hỗ trợ khám sàn lọc được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện, tiết kiệm thời gian',
+        technology: ['ReactJs', 'NodeJs','Express','MongoDB', 'Gemini API', 'Langchain', 'AssemblyAI API', 'Firebase']
     },
     {
-        image: '1.png',
-        title: 'Hệ thống hỗ trợ khám sàng lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
-        role: ['Fullstack Developer'],
-        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
-        descript: 'Pharmartist là hệ thống được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện...',
-        technology: ['React.js', 'Node.js']
+        image: '2.png',
+        title: 'An Minh Argimex Agricultural Project',
+        role: ['Frontend','Design Figma','Wordpress'],
+        link: 'https://anminhagrimex.com/',
+        descript: 'Trang giới thiệu sản phẩm nông nghiệp, xuất nhập khẩu nông sản trong lĩnh vực cung cấp và chế biến nông sản thành phẩm cho các công ty xuất khẩu khác',
+        technology: ['Wordpress', 'PHP', 'Bootstrap', 'Figma']
     },
     {
-        image: '1.png',
-        title: 'Hệ thống hỗ trợ khám sàng lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
-        role: ['Fullstack Developer'],
-        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
-        descript: 'Pharmartist là hệ thống được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện...',
-        technology: ['React.js', 'Node.js']
+        image: '3.png',
+        title: 'SGE Project Management System',
+        role: ['Frontend','Design Figma','Wordpress'],
+        link: 'https://sgegroup.com.vn/',
+        descript: 'Trang website giới thiệu về SGE Group, SGE Group là đơn vị hàng đầu chuyên về dịch vụ tư vấn, thiết kế và cung  cấp, thi công lắp đặt thiết bị bếp quy mô công nghiệp phục vụ trong ngành nhà  hàng – khách sạn – Resort phân khúc 3 – 5 sao. Được thành lập vào năm 2016, Công ty Cổ Phần SGE GROUP đã hân hạnh triển khai đồng hành hơn 1000 dự án trên toàn quốc.',
+        technology: ['Wordpress', 'PHP', 'Bootstrap', 'Figma']
     },
     {
-        image: '1.png',
-        title: 'Hệ thống hỗ trợ khám sàng lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
+        image: '4.png',
+        title: 'Zalo Mini App - Trường Trung Tiểu học Việt Anh School',
         role: ['Fullstack Developer'],
-        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
-        descript: 'Pharmartist là hệ thống được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện...',
-        technology: ['React.js', 'Node.js']
+        descript: 'Dự án kết hợp cùng với đối tác, Trường Trung Tiểu học Việt Anh School là một ứng dụng mini trên nền tảng Zalo. App bao gồm các chức năng quản lý thông tin học sinh, xem thời khóa biểu, điểm số, xin nghỉ phép, đăng ký các khóa học, dịch vụ xe bus, ăn uống, thông báo, và gửi tin nhắn trực tiếp giữa phụ huynh và giáo viên.',
+        technology: ['ReactJs', 'Tailwind', 'Zalo Mini App', 'React Hook Form']
     },
+    {
+        image: '5.png',
+        title: 'Personal Portfolio Website',
+        role: ['Frontend Developer'],
+        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
+        descript: 'Website giới thiệu bản thân, thông tin cá nhân, dự án, kỹ năng và thông tin liên hệ',
+        technology: ['ReactJs', 'Tailwind', 'Framer Motion']
+    }
 ]

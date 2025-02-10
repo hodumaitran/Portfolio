@@ -5,7 +5,7 @@ import { ProjectData } from '../constants';
 const getImage = (fileName) => new URL(`/src/assets/project/${fileName}`, import.meta.url).href;
 export const Project = () => {
     return (
-        <div className='md:py-28 py-10 flex justify-center items-center'>
+        <div className='md:py-20 py-10 flex justify-center items-center'>
             <div className="w-full">
                 <motion.h3
                     className='text-center text-4xl font-medium md:mb-20 mb-10'
