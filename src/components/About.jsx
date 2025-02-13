@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '/src/assets/image/avatar.jpg';
+import image from '/src/assets/image/avatar1.jpg';
 import { motion } from 'framer-motion';
 
 export const About = () => {
