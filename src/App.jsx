@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <div className=''>
-      <Navbar />
+      <Navbar/>
       <div className="w-full flex justify-center items-center px-4 md:px-10 lg:px-20">
         <div className="container mx-auto">
           <Information />

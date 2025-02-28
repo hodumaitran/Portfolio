@@ -6,7 +6,6 @@ export const skills = [
     { id: 3, name: "JavaScript", image: "javascript.png" },
     { id: 4, name: "Typescript", image: "typescript.png" },
     { id: 5, name: "React", image: "react.png" },
-    { id: 6, name: "Nextjs", image: "nextjs-black.png" },
     { id: 7, name: "Node.js", image: "nodejs.png" },
     { id: 8, name: "Redux", image: "redux.png" },
     { id: 9, name: "tailwind", image: "tailwind.png" },
@@ -17,7 +16,6 @@ export const skills = [
     { id: 14, name: "Firebase", image: "firebase.png" },
     { id: 15, name: "Figma", image: "figma.png" },
     { id: 16, name: "github", image: "github-black.png" },
-    { id: 17, name: "wordpress", image: "wordpress.png" },
 ];
 
 
@@ -69,7 +67,7 @@ export const ProjectData = [
         image: '1.png',
         title: 'Hệ thống hỗ trợ khám sàn lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist',
         role: ['Fullstack Developer'],
-        link: 'https://github.com/ThanhNha3/Pharmartist_DATN/tree/dev',
+        link: 'https://vimeo.com/1061162812?share=copy',
         descript: 'Pharmartist là hệ thống hỗ trợ khám sàn lọc được xây dựng nhằm hỗ trợ đội ngũ y bác sĩ tại bệnh viện, tiết kiệm thời gian',
         technology: ['ReactJs', 'NodeJs','Express','MongoDB', 'Gemini API', 'Langchain', 'AssemblyAI API', 'Firebase']
     },

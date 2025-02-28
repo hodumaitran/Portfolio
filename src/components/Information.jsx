@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import avatar from '/src/assets/image/avatar.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import cvFile from '/src/assets/file/CV_PC06159_HoDuMaiTran.pdf';
+import cvFile from '/src/assets/file/CV_HoDuMaiTran.pdf';
 
 export const Information = () => {
   return (
