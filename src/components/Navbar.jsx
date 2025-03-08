@@ -14,7 +14,7 @@ export const Navbar = () => {
     return (
         <div>
             <div className="w-full h-[80px] text-white bg-[#CF8BF3] flex justify-center items-center z-10">
-                <div className="container flex justify-between items-center px-4">
+                <div className="w-[90%] flex justify-between items-center px-4">
                     <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-200">
                         Portfolio
                     </h1>
