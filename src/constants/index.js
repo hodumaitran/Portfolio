@@ -77,6 +77,22 @@ export const timelineData = [
 
 export const ProjectData = [
   {
+    image: "8.png",
+    title: "Bổ Túc Lái Xe Golden Bee",
+    role: ["Frontend Developer"],
+    link: "https://play.google.com/store/apps/details?id=com.botuclaixe.app",
+    descript:
+      "Ứng dụng Bổ Túc Lái Xe Golden Bee là cầu nối công nghệ trực tiếp từ Trung tâm Đào tạo và Bổ túc Lái xe Golden Bee – đơn vị uy tín hàng đầu tại TP. Hồ Chí Minh, Cần Thơ và các tỉnh lân cận (Bình Dương, Tây Ninh). Với cam kết mang đến giải pháp đào tạo thông minh.",
+    technology: [
+      "React Native",
+      "Tailwind",
+      "typeScript",
+      "javaScript",
+      "React Navigation",
+      "React Query",
+    ],
+  },
+  {
     image: "1.png",
     title:
       "Hệ thống hỗ trợ khám sàn lọc bệnh tích hợp trí tuệ nhân tạo - Pharmartist",
