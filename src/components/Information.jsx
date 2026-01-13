@@ -1,15 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import avatar from '/src/assets/image/avatar.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import cvFile from '/src/assets/file/CV_HoDuMaiTran.pdf';
+import React from "react";
+import { motion } from "framer-motion";
+import avatar from "/src/assets/image/avatar.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import cvFile from "/src/assets/file/CV_HoDuMaiTran.pdf";
 
 export const Information = () => {
   return (
-    <div
-      className="grid md:grid-cols-2 gap-10 px-4 md:py-20 py-10 "
-    >
+    <div className="grid md:grid-cols-2 gap-10 px-4 md:py-20 py-10 ">
       {/* Thông tin */}
       <div>
         <motion.h1
@@ -36,7 +34,11 @@ export const Information = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
         >
-          Tôi là một lập trình viên Frontend vừa tốt nghiệp với nền tảng vững chắc về phát triển web. Với hơn 2 năm học tập trên trường, tôi đã tích lũy được kiến thức và kỹ năng thực tiễn với các công nghệ frontend như React và Next.js, cùng các công nghệ backend như Node.js, MySQL và MongoDB. Mục tiêu của tôi là tận dụng chuyên môn của mình để xây dựng những website có hiệu năng cao, giao diện thân thiện với người dùng, đồng thời không ngừng cải thiện bản thân để hướng tới trở thành lập trình viên Fullstack trong tương lai.
+          Frontend Developer với hơn 2 năm kinh nghiệm, chuyên về React, React
+          Native, Next.js và WordPress. Ngoài ra còn có Node.js, MySQL, MongoDB
+          cùng kỹ năng triển khai UI/UX tối ưu trải nghiệm người dùng. Đam mê
+          công nghệ, luôn tìm kiếm giải pháp sáng tạo và không ngừng học hỏi để
+          tiến tới mục tiêu trở thành Fullstack Developer.{" "}
         </motion.p>
 
         <div className="w-full flex md:justify-start justify-center items-center">
@@ -46,7 +48,8 @@ export const Information = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
           >
-            <a className='flex justify-center items-center gap-3'
+            <a
+              className="flex justify-center items-center gap-3"
               href={cvFile}
               download="CV_HoDuMaiTran.pdf"
             >
@@ -64,7 +67,11 @@ export const Information = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0 }}
       >
-        <img src={avatar} className="md:w-full object-cover rounded-3xl" alt="Avatar" />
+        <img
+          src={avatar}
+          className="md:w-full object-cover rounded-3xl"
+          alt="Avatar"
+        />
       </motion.div>
     </div>
   );
