@@ -1,103 +1,153 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Toggle } from "./Toggle";
 import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion";
+
+const NAV_ITEMS = [
+  { id: "about", label: "Giới thiệu" },
+  { id: "skill", label: "Kỹ năng" },
+  { id: "project", label: "Dự án" },
+  { id: "timeline", label: "Hành trình" },
+  { id: "contact", label: "Liên hệ" },
+];
+
+const NavLink = ({ to, children, onClick }) => (
+  <Link
+    to={to}
+    smooth={true}
+    duration={500}
+    offset={-80}
+    className="nav-link"
+    onClick={onClick}
+  >
+    {children}
+  </Link>
+);
 
 export const Header = () => {
-  const [nav, setNav] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div>
-      <div className="w-full h-[80px] text-white bg-[#CF8BF3] flex justify-center items-center z-10">
-        <div className="w-[90%] flex justify-between items-center px-4">
-          <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-200">
-            Portfolio
-          </h1>
-          <ul className="hidden h-full md:flex md:items-center md:justify-between ">
-            <li className="p-5 cursor-pointer">
-              <Link to="about" smooth={true} duration={500}>
-                Giới thiệu
-              </Link>
-            </li>
-            <li className="p-5 cursor-pointer">
-              <Link to="skill" smooth={true} duration={500}>
-                Kỹ năng
-              </Link>
-            </li>
-            <li className="p-5 cursor-pointer">
-              <Link to="project" smooth={true} duration={500}>
-                Dự án
-              </Link>
-            </li>
-            <li className="p-5 cursor-pointer">
-              <Link to="timeline" smooth={true} duration={500}>
-                Hành trình
-              </Link>
-            </li>
-            <li className="p-5 cursor-pointer">
-              <Link to="contact" smooth={true} duration={500}>
-                Liên hệ
-              </Link>
-            </li>
-            <Toggle />
-          </ul>
-
-          <div onClick={handleNav} className="block md:hidden">
-            {nav ? (
-              <FontAwesomeIcon icon={faXmark} />
-            ) : (
-              <FontAwesomeIcon icon={faBars} />
-            )}
-          </div>
-
-          <div
-            className={
-              nav
-                ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500 p-4"
-                : "fixed left-[-100%]"
-            }
-          >
-            <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-200">
+    <>
+      <header className="sticky top-0 z-[100] navbar-glass">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex justify-between items-center h-20">
+            {/* Logo */}
+            <motion.h1
+              className="text-2xl font-bold text-primary"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               Portfolio
-            </h1>
-            <ul className="text-center">
-              <ul className="h-full">
-                <li className="p-5 cursor-pointer">
-                  <Link to="about" smooth={true} duration={500}>
-                    Giới thiệu
-                  </Link>
-                </li>
-                <li className="p-5 cursor-pointer">
-                  <Link to="skill" smooth={true} duration={500}>
-                    Kỹ năng
-                  </Link>
-                </li>
-                <li className="p-5 cursor-pointer">
-                  <Link to="project" smooth={true} duration={500}>
-                    Dự án
-                  </Link>
-                </li>
-                <li className="p-5 cursor-pointer">
-                  <Link to="timeline" smooth={true} duration={500}>
-                    Hành trình
-                  </Link>
-                </li>
-                <li className="p-5 cursor-pointer">
-                  <Link to="contact" smooth={true} duration={500}>
-                    Liên hệ
-                  </Link>
-                </li>
+            </motion.h1>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-2">
+              {NAV_ITEMS.map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                >
+                  <NavLink to={item.id}>{item.label}</NavLink>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+              >
                 <Toggle />
-              </ul>
-            </ul>
+              </motion.div>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMenu}
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors !bg-transparent !shadow-none"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            >
+              <FontAwesomeIcon
+                icon={isMenuOpen ? faBars : faBars}
+                className="text-xl"
+              />
+            </button>
           </div>
         </div>
-      </div>
-    </div>
+      </header>
+
+      {/* Mobile Navigation - Outside header to avoid stacking context issues */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/60 md:hidden"
+              style={{ zIndex: 9998 }}
+              onClick={closeMenu}
+            />
+
+            {/* Mobile Menu Panel */}
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="fixed top-0 left-0 h-full w-72 md:hidden shadow-2xl"
+              style={{
+                zIndex: 9999,
+                backgroundColor: "var(--bg-primary, #ffffff)",
+              }}
+            >
+              <div className="p-6 h-full bg-white dark:bg-[#0f0f1a]">
+                <div className="flex justify-between items-center mb-8">
+                  <h1 className="text-2xl font-bold text-primary">Portfolio</h1>
+                  <button
+                    onClick={closeMenu}
+                    className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    aria-label="Close menu"
+                  >
+                    <FontAwesomeIcon icon={faXmark} className="text-xl" />
+                  </button>
+                </div>
+
+                <nav className="flex flex-col gap-2">
+                  {NAV_ITEMS.map((item, index) => (
+                    <motion.div
+                      key={item.id}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.1 }}
+                    >
+                      <NavLink to={item.id} onClick={closeMenu}>
+                        {item.label}
+                      </NavLink>
+                    </motion.div>
+                  ))}
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.5 }}
+                    className="mt-4"
+                  >
+                    <Toggle />
+                  </motion.div>
+                </nav>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   );
 };

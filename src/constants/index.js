@@ -27,17 +27,17 @@ export const skills = [
 export const timelineData = [
   {
     index: 1,
-    title: "Làm việc tại Công ty TNHH Giải pháp CNTT Golden Bee",
+    title: "Golden Bee IT Solutions Co., Ltd",
     content:
-      "Chính thức xin chào Chế Mẹo! Đây là ứng dụng dành cho học sinh và các bậc phụ huynh tại Trường Trung Tiểu học Việt Anh - Cần Thơ, với các chức năng quản lý học sinh, đăng ký dịch vụ, tra cứu điểm số, thời khóa biểu... nhằm giúp phụ huynh và học sinh có thể dễ dàng theo dõi kết quả học tập của con em mình và kiếm điểm tích lũy để đổi quà.",
+      "Đơn vị tiên phong trong lĩnh vực chuyển đổi số tại Việt Nam. Chuyên cung cấp dịch vụ thiết kế website, phát triển mobile app, SEO, và các giải pháp công nghệ toàn diện cho doanh nghiệp. Với hệ thống 4 chi nhánh tại TPHCM 2 cơ sở và Cần Thơ 2 cơ sở, https://goldenbeeltd.vn/",
     icon: faBriefcase,
-    time: "01/2025 - 01/2026",
+    time: "01/2025 - 02/2026",
   },
   {
     index: 2,
     title: "Tốt nghiệp ngành Lập trình Web - Cao đẳng FPT Polytechnic Cần Thơ",
     content:
-      "Chính thức tốt nghiệp ngành Lập trình Web tại FPT Polytechnic Cần Thơ với GPA 8.9/10. Kết thúc hành trình học tập với 3 năm của mình. Tuy nhiều có những trắc trở nhưng tôi cũng đã có những trải nghiệm và cơ hội để học hỏi và phát triển bản thân mình.",
+      "Chính thức tốt nghiệp ngành Lập trình Web tại FPT Polytechnic Cần Thơ với GPA 3.82/4. Kết thúc hành trình học tập với 3 năm của mình. Tuy nhiều có những trắc trở nhưng tôi cũng đã có những trải nghiệm và cơ hội để học hỏi và phát triển bản thân mình.",
     icon: faGraduationCap,
     time: "12/2024",
   },
@@ -155,5 +155,41 @@ export const ProjectData = [
     descript:
       "Website giới thiệu dịch vụ đào tạo lái xe và các khóa học liên quan, tích hợp hệ thống quản lý khóa học và đăng ký trực tuyến.",
     technology: ["Wordpress", "PHP", "Bootstrap", "Figma"],
+  },
+  {
+    image: "9.png",
+    title: "Trung Tâm Nhà Đất Đà Nẵng",
+    role: ["Frontend Developer", "Wordpress"],
+    link: "https://trungtamnhadatdanang.com/",
+    descript:
+      "Website bất động sản chuyên nghiệp tại Đà Nẵng, cung cấp thông tin mua bán, cho thuê nhà đất với giao diện hiện đại và tối ưu SEO.",
+    technology: ["Wordpress", "PHP", "JavaScript", "CSS"],
+  },
+  {
+    image: "10.png",
+    title: "Vua Kiểng Bến Tre",
+    role: ["Frontend Developer", "Wordpress"],
+    link: "https://vuakiengbentre.com/",
+    descript:
+      "Website giới thiệu và kinh doanh cây kiểng, cây cảnh tại Bến Tre với thiết kế thân thiện và dễ sử dụng.",
+    technology: ["Wordpress", "PHP", "JavaScript", "CSS"],
+  },
+  {
+    image: "11.png",
+    title: "Cây Kiểng Sa Đéc",
+    role: ["Frontend Developer", "Wordpress"],
+    link: "https://caykiengsadec.com/",
+    descript:
+      "Website giới thiệu và bán cây kiểng, hoa cảnh từ làng hoa Sa Đéc nổi tiếng, với giao diện đẹp mắt và trải nghiệm mượt mà.",
+    technology: ["Wordpress", "PHP", "JavaScript", "CSS"],
+  },
+  {
+    image: "12.png",
+    title: "Pylo Herb",
+    role: ["Frontend Developer", "Wordpress"],
+    link: "https://pyloherb.demogoldenbee.click/",
+    descript:
+      "Website giới thiệu sản phẩm thảo dược và chăm sóc sức khỏe, thiết kế hiện đại với trải nghiệm người dùng tối ưu.",
+    technology: ["Wordpress", "PHP", "JavaScript", "Tailwind"],
   },
 ];

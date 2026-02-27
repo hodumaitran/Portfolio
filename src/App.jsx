@@ -10,35 +10,34 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="">
+    <div className="min-h-screen">
       <Header />
-      <div className="w-full flex justify-center items-center px-4 md:px-10 lg:px-20">
-        <div className="container mx-auto">
+      <main className="w-full flex justify-center items-center px-4 md:px-8 lg:px-16">
+        <div className="container mx-auto max-w-7xl">
           <Information />
-          <div className="border-b border-purple-300"></div>
-          <div id="about">
+          <div className="section-divider" />
+          <section id="about">
             <About />
-          </div>
-          <div className="border-b border-purple-300"></div>
-          <div id="skill">
+          </section>
+          <div className="section-divider" />
+          <section id="skill">
             <Skill />
-          </div>
-          <div className="border-b border-purple-300"></div>
-          <div id="project">
+          </section>
+          <div className="section-divider" />
+          <section id="project">
             <Project />
-          </div>
-          <div className="border-b border-purple-300"></div>
-          <div id="timeline">
+          </section>
+          <div className="section-divider" />
+          <section id="timeline">
             <Timeline />
-          </div>
-          <div className="border-b border-purple-300"></div>
-          <div id="contact">
+          </section>
+          <div className="section-divider" />
+          <section id="contact">
             <Contact />
-          </div>
-          <div className="border-b border-purple-300"></div>
-          <Footer />
+          </section>
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
