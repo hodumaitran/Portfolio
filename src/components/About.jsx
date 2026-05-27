@@ -3,7 +3,7 @@ import image from "/src/assets/image/avatar1.jpg";
 
 const HIGHLIGHTS = [
   { number: "2+", label: "Năm kinh nghiệm" },
-  { number: "10+", label: "Dự án hoàn thành" },
+  { number: "15+", label: "Dự án hoàn thành" },
   { number: "3.82", label: "GPA tốt nghiệp" },
 ];
 

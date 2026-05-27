@@ -60,7 +60,7 @@ export const Information = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Frontend Developer
+            Software Developer
           </motion.h2>
 
           <motion.p
@@ -141,7 +141,7 @@ export const Information = () => {
 
         {/* Avatar - Hidden on small screens */}
         <motion.div
-          className="order-1 lg:order-2 hidden sm:flex justify-center lg:justify-end"
+          className="order-1 lg:order-2 hidden lg:flex justify-center lg:justify-end"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -150,27 +150,10 @@ export const Information = () => {
             <div className="avatar-glow rounded-3xl">
               <img
                 src={avatar}
-                className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover rounded-3xl"
+                className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-92 lg:h-92 xl:w-96 xl:h-96 object-cover rounded-3xl"
                 alt="Hồ Dư Mai Trân - Frontend Developer"
               />
             </div>
-
-            {/* Decorative elements */}
-            <motion.div
-              className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#667eea]/20 to-[#764ba2]/20 rounded-full blur-xl"
-              animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.div
-              className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-[#764ba2]/20 to-[#667eea]/20 rounded-full blur-xl"
-              animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.8, 0.5] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 2,
-              }}
-            />
           </div>
         </motion.div>
       </div>

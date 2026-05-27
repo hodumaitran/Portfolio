@@ -192,4 +192,31 @@ export const ProjectData = [
       "Website giới thiệu sản phẩm thảo dược và chăm sóc sức khỏe, thiết kế hiện đại với trải nghiệm người dùng tối ưu.",
     technology: ["Wordpress", "PHP", "JavaScript", "Tailwind"],
   },
+  {
+    image: "13.png",
+    title: "Da Tien Vua",
+    role: ["Frontend Developer"],
+    link: "https://datienvua.com/",
+    descript:
+      "Da Tien Vua - thuong hieu Viet duoc xay dung tren nen tang tu don vi san xuat va xuat khau da tu nhien hang dau Viet Nam.",
+    technology: [],
+  },
+  {
+    image: "14.png",
+    title: "3F Studio",
+    role: ["Frontend Developer"],
+    link: "https://3f.scvweb.io.vn/3d-models/",
+    descript:
+      "3F Studio du an ban model so ve thiet ke tu dong, thanh toan online trong nuoc va quoc te.",
+    technology: [],
+  },
+  {
+    image: "15.png",
+    title: "Nạp mực 247",
+    role: ["Frontend Developer"],
+    link: "https://napmuc247.vn/",
+    descript:
+      "Napmuc247.vn - mot thanh vien chuyen trach dich vu cua ECOink (Muc in tiet kiem) - ra doi voi su menh cung cap giai phap nap muc may in tan noi TP.HCM chuyen nghiep, uy tin va toi uu chi phi nhat.",
+    technology: [],
+  },
 ];
