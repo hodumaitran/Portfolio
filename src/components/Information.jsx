@@ -69,7 +69,7 @@ export const Information = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Frontend Developer với hơn 2 năm kinh nghiệm, chuyên về React, React
+            Software Developer với hơn 2 năm kinh nghiệm, chuyên về React, React
             Native, Next.js và WordPress. Đam mê công nghệ, luôn tìm kiếm giải
             pháp sáng tạo và không ngừng học hỏi để tiến tới mục tiêu trở thành
             Fullstack Developer.

@@ -71,29 +71,34 @@ export const About = () => {
         >
           <div>
             <p className="text-sm md:text-base lg:text-lg leading-relaxed text-secondary mb-4 md:mb-6">
-              Trong quá trình học tập và làm việc, tôi đã tích lũy kinh nghiệm
-              với các công nghệ như{" "}
+              Tôi là{" "}
               <span className="font-semibold text-primary">
-                React, React Native, Next.js, WordPress, Node.js, MySQL và
-                MongoDB
-              </span>
-              . Tôi đã tham gia và triển khai nhiều dự án thực tế, từ phát triển
-              website, ứng dụng di động đến tối ưu hiệu suất và trải nghiệm
+                Frontend Developer
+              </span>{" "}
+              có kinh nghiệm tham gia và triển khai các dự án thực tế với React,
+              Next.js, React Native và WordPress. Tôi tập trung xây dựng giao
+              diện responsive, tối ưu hiệu suất và mang lại trải nghiệm tốt cho
               người dùng.
             </p>
 
             <p className="text-sm md:text-base lg:text-lg leading-relaxed text-secondary mb-4 md:mb-6">
-              Bên cạnh lập trình, tôi còn có kiến thức về{" "}
-              <span className="font-semibold text-primary">SEO</span> và kỹ năng
-              tối ưu website, giúp cải thiện khả năng hiển thị và hiệu quả trên
-              các công cụ tìm kiếm.
+              Bên cạnh Frontend, tôi cũng phát triển kỹ năng{" "}
+              <span className="font-semibold text-primary">
+                Backend với Node.js, NestJS, PostgreSQL, Prisma, Redis và
+                RESTful API
+              </span>
+              , giúp tôi có khả năng tham gia toàn diện hơn vào quá trình phát
+              triển sản phẩm.
             </p>
 
             <p className="text-sm md:text-base lg:text-lg leading-relaxed text-secondary">
-              Tinh thần luôn hướng tới việc tạo ra những sản phẩm chất lượng cao
-              đã thúc đẩy tôi không ngừng học hỏi công nghệ mới, sẵn sàng đón
-              nhận thử thách và hợp tác hiệu quả cùng đội ngũ để đạt được kết
-              quả tốt nhất.
+              Ngoài lập trình, tôi có kinh nghiệm về{" "}
+              <span className="font-semibold text-primary">
+                WordPress, UI/UX và SEO
+              </span>
+              . Tôi luôn chủ động học hỏi công nghệ mới, cải thiện chất lượng
+              sản phẩm và phối hợp hiệu quả cùng đội ngũ trong quá trình phát
+              triển dự án.
             </p>
           </div>
 
