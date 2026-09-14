@@ -206,7 +206,7 @@ export const ProjectData = [
   {
     image: "9.png",
     title: "Trung Tâm Nhà Đất Đà Nẵng",
-    role: ["Frontend Developer", "Wordpress"],
+    role: ["Fullstack Developer", "Wordpress"],
     link: "https://trungtamnhadatdanang.com/",
     descript:
       "Website bất động sản chuyên nghiệp tại Đà Nẵng, cung cấp thông tin mua bán, cho thuê nhà đất với giao diện hiện đại và tối ưu SEO.",
@@ -242,7 +242,7 @@ export const ProjectData = [
   {
     image: "13.png",
     title: "Da Tien Vua",
-    role: ["Frontend Developer"],
+    role: ["Fullstack Developer"],
     link: "https://datienvua.com/",
     descript:
       "Da Tien Vua - thuong hieu Viet duoc xay dung tren nen tang tu don vi san xuat va xuat khau da tu nhien hang dau Viet Nam.",
@@ -257,7 +257,7 @@ export const ProjectData = [
   {
     image: "14.png",
     title: "3F Studio",
-    role: ["Frontend Developer"],
+    role: ["Fullstack Developer"],
     link: "https://3f.scvweb.io.vn/3d-models/",
     descript:
       "3F Studio du an ban model so ve thiet ke tu dong, thanh toan online trong nuoc va quoc te.",
@@ -273,7 +273,7 @@ export const ProjectData = [
   {
     image: "15.png",
     title: "Nạp mực 247",
-    role: ["Frontend Developer"],
+    role: ["Fullstack Developer/SEO"],
     link: "https://napmuc247.vn/",
     descript:
       "Napmuc247.vn - mot thanh vien chuyen trach dich vu cua ECOink (Muc in tiet kiem) - ra doi voi su menh cung cap giai phap nap muc may in tan noi TP.HCM chuyen nghiep, uy tin va toi uu chi phi nhat.",
