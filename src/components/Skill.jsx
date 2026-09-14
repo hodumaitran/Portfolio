@@ -51,13 +51,25 @@ export const Skill = () => {
             whileTap={{ scale: 0.95 }}
             className="skill-card cursor-pointer w-20 sm:w-24 md:w-28"
           >
-            <div className="w-12 h-12 md:w-14 md:h-14">
-              <img
-                src={getImage(skill.image)}
-                alt={skill.name}
-                loading="lazy"
-                className="w-full h-full object-contain"
-              />
+            <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+              {skill.image ? (
+                <img
+                  src={getImage(skill.image)}
+                  alt={skill.name}
+                  loading="lazy"
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <span
+                  aria-hidden="true"
+                  className="flex w-full h-full items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 text-xs font-bold text-primary"
+                >
+                  {skill.name
+                    .split(/\s+/)
+                    .map((word) => word[0])
+                    .join("")}
+                </span>
+              )}
             </div>
             <span className="text-sm font-medium text-center text-secondary">
               {skill.name}

@@ -12,17 +12,19 @@ export const skills = [
   { id: 3, name: "JavaScript", image: "javascript.png" },
   { id: 4, name: "TypeScript", image: "typescript.png" },
   { id: 5, name: "React", image: "react.png" },
-  { id: 6, name: "Next.js", image: "nextjs-black.png" },
+  { id: 6, name: "Next.js", image: "nextjs-white.png" },
   { id: 7, name: "React Native", image: "react.png" },
   { id: 8, name: "Tailwind CSS", image: "tailwind.png" },
-  { id: 9, name: "Bootstrap", image: "bootstrap.png" },
   { id: 10, name: "WordPress", image: "wordpress.png" },
   { id: 11, name: "Node.js", image: "nodejs.png" },
+  { id: 12, name: "NestJS", image: "nest.svg" },
+  { id: 13, name: "REST API", image: "restapi.png" },
+  { id: 14, name: "Prisma ORM", image: "prisma.webp" },
   { id: 16, name: "PostgreSQL", image: "Postgresql.svg" },
   { id: 17, name: "MySQL", image: "mysql.png" },
   { id: 18, name: "MongoDB", image: "mongodb.svg" },
-  { id: 20, name: "Redis", image: "redis.png" },
-  { id: 21, name: "Git/GitHub", image: "github-black.png" },
+  { id: 20, name: "Redis", image: "redis.webp" },
+  { id: 21, name: "Git/GitHub", image: "github-white.png" },
   { id: 22, name: "Docker", image: "docker.png" },
   { id: 23, name: "Postman", image: "postman.svg" },
   { id: 24, name: "Figma", image: "figma.png" },
@@ -34,7 +36,7 @@ export const timelineData = [
     index: 1,
     title: "Software Engineer - Tập đoàn BT Việt Nam",
     content:
-      "Tham gia phát triển và bảo trì các hệ thống web nội bộ và sản phẩm doanh nghiệp. Phụ trách phát triển giao diện Frontend, xây dựng và tích hợp RESTful API, phát triển Backend và làm việc với cơ sở dữ liệu. Tham gia từ quá trình phân tích yêu cầu, thiết kế UI/UX, phát triển tính năng đến kiểm thử và triển khai hệ thống.",
+      "Phát triển và bảo trì các hệ thống web với Next.js, NestJS và PostgreSQL. Tham gia xây dựng giao diện, REST API, cơ sở dữ liệu, authentication & authorization, tích hợp dịch vụ bên thứ ba, testing và triển khai hệ thống.",
     icon: faBriefcase,
     time: "03/2026 - Present",
   },
@@ -89,6 +91,28 @@ export const timelineData = [
 ];
 
 export const ProjectData = [
+  {
+    image: "17.png",
+    title: "VLS Academy - Learning Management System",
+    role: ["Fullstack Developer"],
+    link: "https://vlsacademy.vn/",
+    descript:
+      "Nền tảng LMS hỗ trợ quản lý và kinh doanh khóa học trực tuyến, bao gồm xác thực và phân quyền người dùng, quản lý khóa học, chương và bài học, học video, giỏ hàng, đơn hàng, thanh toán trực tuyến và hệ thống quản trị.",
+    technology: [
+      "Next.js",
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Redis",
+      "REST API",
+      "Docker",
+      "PayOS",
+      "Google Drive API",
+      "Vercel",
+      "Render",
+    ],
+  },
   {
     image: "8.png",
     title: "Bổ Túc Lái Xe Golden Bee",
@@ -245,13 +269,13 @@ export const ProjectData = [
       "Napmuc247.vn - mot thanh vien chuyen trach dich vu cua ECOink (Muc in tiet kiem) - ra doi voi su menh cung cap giai phap nap muc may in tan noi TP.HCM chuyen nghiep, uy tin va toi uu chi phi nhat.",
     technology: ["Wordpress", "Theme tự build", "SEO Technical", "SEO Content"],
   },
-  {
-    image: "16.png",
-    title: "Hệ thống quản lý nhân sự",
-    role: ["Fullstack Developer"],
-    link: "",
-    descript:
-      "Hệ thống quản lý nhân sự toàn diện giúp quản lý hồ sơ nhân viên, chấm công, tiền lương, tuyển dụng và báo cáo. Hệ thống hỗ trợ phân quyền, xuất báo cáo, thông báo nội bộ và tối ưu hóa quy trình nhân sự cho doanh nghiệp.",
-    technology: ["ReactJs", "NodeJs", "Express", "MongoDB", "Tailwind"],
-  },
+  // {
+  //   image: "16.png",
+  //   title: "Hệ thống quản lý nhân sự",
+  //   role: ["Fullstack Developer"],
+  //   link: "",
+  //   descript:
+  //     "Hệ thống quản lý nhân sự toàn diện giúp quản lý hồ sơ nhân viên, chấm công, tiền lương, tuyển dụng và báo cáo. Hệ thống hỗ trợ phân quyền, xuất báo cáo, thông báo nội bộ và tối ưu hóa quy trình nhân sự cho doanh nghiệp.",
+  //   technology: ["ReactJs", "NodeJs", "Express", "MongoDB", "Tailwind"],
+  // },
 ];
