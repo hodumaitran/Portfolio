@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { skills } from "../constants";
+import { useTheme } from "../contexts/ThemeContext";
 
 const getImage = (fileName) =>
   new URL(`/src/assets/skills/${fileName}`, import.meta.url).href;
@@ -24,6 +25,8 @@ const itemVariants = {
 };
 
 export const Skill = () => {
+  const { darkMode } = useTheme();
+
   return (
     <section className="py-16 md:py-24">
       <motion.h2
@@ -54,7 +57,11 @@ export const Skill = () => {
             <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
               {skill.image ? (
                 <img
-                  src={getImage(skill.image)}
+                  src={getImage(
+                    darkMode && skill.darkImage
+                      ? skill.darkImage
+                      : skill.image,
+                  )}
                   alt={skill.name}
                   loading="lazy"
                   className="w-full h-full object-contain"
